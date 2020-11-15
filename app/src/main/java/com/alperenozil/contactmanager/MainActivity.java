@@ -14,6 +14,7 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -37,11 +38,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
         getSupportActionBar().setTitle(" Contacts Manager");
 
-        recyclerView = findViewById(R.id.recycler_view_contacts);
+        recyclerView = findViewById(R.id.recyclerView);
         db = new DatabaseHelper(this);
 
         contactArrayList.addAll(db.getAllContacts());
@@ -53,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setAdapter(contactsAdapter);
 
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        Button fab = findViewById(R.id.button2);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
