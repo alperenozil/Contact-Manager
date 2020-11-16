@@ -20,21 +20,6 @@ public class ContactsAdapter extends RecyclerView.Adapter<ContactsAdapter.MyView
     private ArrayList<Contact> contactssList;
     private MainActivity mainActivity;
 
-    public class MyViewHolder extends RecyclerView.ViewHolder {
-
-        public TextView name;
-        public TextView emil;
-
-
-        public MyViewHolder(View view) {
-            super(view);
-            name = view.findViewById(R.id.name);
-            emil = view.findViewById(R.id.email);
-
-        }
-    }
-
-
     public ContactsAdapter(Context context, ArrayList<Contact> contacts, MainActivity mainActivity) {
         this.context = context;
         this.contactssList = contacts;
@@ -76,5 +61,18 @@ public class ContactsAdapter extends RecyclerView.Adapter<ContactsAdapter.MyView
         return contactssList.size();
     }
 
+    public class MyViewHolder extends RecyclerView.ViewHolder {
+
+        public TextView name;
+        public TextView emil;
+
+
+        public MyViewHolder(View view) {
+            super(view);
+            name = view.findViewById(R.id.name);
+            emil = view.findViewById(R.id.email);
+
+        }
+    }
 
 }
