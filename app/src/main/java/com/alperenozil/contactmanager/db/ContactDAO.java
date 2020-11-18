@@ -15,9 +15,9 @@ public interface ContactDAO {
     @Insert
     long addContact(Contact contact);
     @Delete
-    void deleteContact();
+    void deleteContact(Contact contact);
     @Update
-    void updateContact();
+    void updateContact(Contact contact);
     @Query("SELECT * FROM contacts")
     List<Contact> getContacts();
     @Query("SELECT * FROM contacts WHERE contact_id==:contactId")
