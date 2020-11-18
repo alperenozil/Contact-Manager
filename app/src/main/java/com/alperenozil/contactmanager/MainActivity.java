@@ -19,7 +19,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.alperenozil.contactmanager.adapter.ContactsAdapter;
-import com.alperenozil.contactmanager.db.DatabaseHelper;
 import com.alperenozil.contactmanager.db.entity.Contact;
 
 import java.util.ArrayList;
