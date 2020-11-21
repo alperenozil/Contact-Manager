@@ -27,7 +27,6 @@ public class Contact {
         this.id = id;
     }
 
-
     public String getName() {
         return name;
     }
@@ -44,11 +43,11 @@ public class Contact {
         this.email = email;
     }
 
-    public long getId() {
+    public long getİd() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setİd(long id) {
         this.id = id;
     }
 
